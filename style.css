@@ -1,0 +1,19 @@
+body{background-color: forestgreen;
+    font-family: calibri;
+}
+
+
+img{
+    border-style: solid;
+    border-color: chartreuse;
+    border-radius: 5px;
+
+}
+
+
+p{
+        border-style:solid;
+        border-color: chartreuse;
+        border-radius: 5px;
+        padding: 5px;
+}
