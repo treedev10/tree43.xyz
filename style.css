@@ -12,8 +12,13 @@ img{
 
 
 p{
-        border-style:solid;
+        border-style: solid;
         border-color: chartreuse;
         border-radius: 5px;
         padding: 5px;
+        border-collapse: collapse;
+}
+
+hr{
+    border-color: chartreuse;
 }
