@@ -1,28 +1,26 @@
-body{background-color: forestgreen;
+body{background-color:darkgreen;
     font-family: calibri;
+    text-align: center;
+    align-items: center;
+    font-family: helvetica;
 }
-
 
 img{
     border-style: solid;
     border-color: chartreuse;
     border-radius: 5px;
-
 }
 
 
-p{
-        border-style: solid;
-        border-color: chartreuse;
-        border-radius: 5px;
-        padding: 5px;
-        border-collapse: collapse;
-}
+
 
 hr{
     border-color: chartreuse;
+    width: 500px;
 }
 
 a{
     color: chartreuse;
+    text-decoration: none;
 }
+
