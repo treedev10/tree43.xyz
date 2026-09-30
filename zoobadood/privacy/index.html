@@ -132,13 +132,13 @@
 <ul>
   <li><strong>Anonymous player ID.</strong> A random ID that Unity creates for your copy of the game, plus a sign-in token stored on your headset so you keep the same ID next time. It isn't linked to your name, your email or your Meta account.</li>
   <li><strong>IP address.</strong> Unity's servers see your IP address when you connect, as any online service does. Other players don't: game traffic goes through Unity's relay servers rather than directly between headsets.</li>
-  <li><strong>Game room details.</strong> While a game is open, Unity holds its room code, whether it's public or private, the number of players, the game version and the player IDs of the people in it.</li>
+  <li><strong>Game room details.</strong> While a game is open, Unity holds its room code, whether it's public or private, the number of players, the game version and the player IDs of the people in it. If players vote someone out of a room, the host's game remembers that player's ID until the room closes, so they can't rejoin it.</li>
   <li><strong>Gameplay data.</strong> While you're in a game, your head and hand positions and your in-game actions (catching, throwing, losing an arm) are sent to the other players so they can see you. This data passes through Unity's relay servers in real time and isn't recorded by us.</li>
   <li><strong>Basic technical information.</strong> Unity may receive standard connection details such as your device type, operating system and game version, which it needs to run the service.</li>
 </ul>
 
 <h3>When you report a player</h3>
-<p>An in-game report sends us the reported player's anonymous player ID, your anonymous player ID, the room code, the time and the reason you picked. We use it only to look into the report.</p>
+<p>An in-game report sends the reported player's anonymous player ID, the reason you picked and the time to Unity's moderation service, where we review it. Unity knows which anonymous player ID sent it because you're signed in. We use reports only to look into them.</p>
 
 <h3>When you contact us</h3>
 <p>If you email us (for a privacy request or an appeal), we receive your email address and whatever you choose to send. We use it only to deal with your message.</p>
@@ -177,7 +177,7 @@
 
 <h2 id="share">6. Who it's shared with</h2>
 <ul>
-  <li><strong>Unity Technologies</strong> runs our online services (Authentication, Lobby, Relay and, later, Vivox voice) on our behalf. Unity handles this data under its own <a href="https://unity.com/legal/privacy-policy">privacy policy</a>.</li>
+  <li><strong>Unity Technologies</strong> runs our online services (Authentication, Lobby, Relay, Moderation for player reports and, later, Vivox voice) on our behalf. Unity handles this data under its own <a href="https://unity.com/legal/privacy-policy">privacy policy</a>.</li>
   <li><strong>Other players</strong> in your game see your avatar's movements and actions and, once voice chat is added, hear you if your microphone is on.</li>
   <li><strong>Meta</strong> distributes the game and handles purchases through the Meta Horizon Store under <a href="https://www.meta.com/legal/privacy-policy/">Meta's privacy policy</a>. We don't receive your payment details. If you use Meta's reporting tools, Meta handles that report.</li>
   <li><strong>Authorities</strong>, when the law requires it, or when we believe in good faith that sharing is needed to protect someone from serious harm (see <a href="#report">Reporting a player</a>).</li>
@@ -195,6 +195,7 @@
     <tr><td>Game room details</td><td>While the game is open. Rooms are deleted when the host leaves, or shortly after they stop being used.</td></tr>
     <tr><td>Head and hand movements, in-game actions</td><td>Not stored. Passed to other players in real time only.</td></tr>
     <tr><td>Voice chat (when added)</td><td>Not recorded or stored.</td></tr>
+    <tr><td>Vote kicks</td><td>The host's game remembers who was voted out of a room until that room closes.</td></tr>
     <tr><td>In-game reports</td><td>Up to 12 months after we've dealt with the report, then deleted, unless we need to keep it longer for a legal reason or an ongoing safety issue.</td></tr>
     <tr><td>Emails you send us</td><td>Up to 12 months after the matter is closed, then deleted, unless we need to keep something longer for a legal reason or an ongoing safety issue.</td></tr>
     <tr><td>Records of action taken against a player (for example a ban)</td><td>For as long as the restriction applies, plus up to 12 months.</td></tr>
@@ -208,13 +209,14 @@
 <h3>Leave and block them out</h3>
 <ul>
   <li>Press <strong>EXIT</strong> to leave the game at any time.</li>
-  <li>Once voice chat is added, mute the player from the in-game player list. Muting takes effect straight away and only affects what you hear.</li>
+  <li>Start a <strong>vote kick</strong>: open the player list (<strong>PLAYERS</strong> on your panel, or <strong>B</strong> on your controller), pick the player and choose <strong>VOTE KICK</strong>. Everyone else in the room gets a vote. If most of them agree, the player is removed and can't rejoin that room. The host can't be voted out; if the host is the problem, leave and join another room.</li>
+  <li>Once voice chat is added, mute the player from the same player list. Muting takes effect straight away and only affects what you hear.</li>
   <li>Play in a <strong>private room</strong> so only people you've given the code to can join.</li>
 </ul>
 
 <h3>Report them</h3>
-<p>Reporting happens in the game. Open the player list, pick the player and choose <strong>Report</strong>, then pick a reason. The report goes straight to us with the details listed in <a href="#collect">What we collect</a>, so you don't need to note down codes or times. The player isn't told who reported them. <span class="tag">Coming in an update</span></p>
-<p>You can also report a player, or the app itself, from your Quest's universal menu. Those reports go to Meta and follow Meta's own process. Until in-game reporting arrives, use that.</p>
+<p>Reporting happens in the game. Open the player list (<strong>PLAYERS</strong> on your panel, or <strong>B</strong> on your controller), pick the player and choose <strong>REPORT</strong>, then pick a reason. The report comes straight to us with the details listed in <a href="#collect">What we collect</a>, so you don't need to note down codes or times. The player isn't told who reported them.</p>
+<p>You can also report a player, or the app itself, from your Quest's universal menu. Those reports go to Meta and follow Meta's own process.</p>
 
 <h3>What happens next</h3>
 <p>We review every report, usually within 7 days and sooner for anything involving a child or a threat of harm. Depending on what we find, we may warn the player, remove their access to voice chat, or block their player ID from online play for a period or permanently. Reports are anonymous, so we can't reply to them individually, and we don't share what happened to the other player.</p>
